@@ -4,8 +4,10 @@ experimental study to extend lifespan of DxO One camera
 # Introduction
 As of July 2019, DxO One, is still awesome. But it has discontinued more than a year ago.
 https://www.digitaltrends.com/photography/dxo-one-discontinued/
-There is a official website of open-source oriented project exist, but it seems inactive.
+
+There is an official website of open-source oriented project exist, but it seems inactive.
 https://openone.dxo.com/
+
 As openone project is not serving any resources, I tried some stuff.
 
 # Materials Used
