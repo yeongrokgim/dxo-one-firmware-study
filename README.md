@@ -19,7 +19,7 @@ As openone project is not serving any resources, I tried some stuff.
 1) it seems DxO One has Ambarella A9 series SoC
 https://www.goprawn.com/forum/ambarella-cams/14041-dxo-one-ambarella-a9s35-sony-imx183
 2) GoPro Hero (=<5) series has Ambarella SoCs too, and custom scripts are available, known as autoexec.ash
-2-1) Ambarella SoC works as a two seperated parts; RTOS(ThreadX) and a Linux system to support wifi and more
+3) Ambarella SoC works as a two seperated parts; RTOS(ThreadX) and a Linux system to support wifi and more
 
 # Hardware side
 1) Looking for a debug pin
@@ -34,17 +34,17 @@ Ambarella A9-A1-RH S1433 N93WA-D ANM1N1 A9S35 (SoC)
 # Software side
 1) binwalk couldn't extract partitions.
 2) fwparster in gopro-fw-tools ( https://github.com/evilwombat/gopro-fw-tools ) seperated firmware file to 5 sections (0 - 4)
-2-1) ubi_reader ( https://github.com/jrspruitt/ubi_reader ) extracted internal Linux partiton from section_4
-2-2) Linux system has limited features, mainly to support Wi-Fi connection between smartphone and DxO One
-2-3) modifying filesystem and repack, then upload to device will allow you to connect camera, but I didn't tried.
-3) run 'strings' to get some clues inside firmware files worked, many potential commands and device-specfic commands in RTOS found.
+3) ubi_reader ( https://github.com/jrspruitt/ubi_reader ) extracted internal Linux partiton from section_4
+4) Linux system has limited features, mainly to support Wi-Fi connection between smartphone and DxO One
+5) modifying filesystem and repack, then upload to device will allow you to connect camera, but I didn't tried.
+6) run 'strings' to get some clues inside firmware files worked, many potential commands and device-specfic commands in RTOS found.
 
 # autoexec.ash side
 1) if there is a file named 'autoexec.ash' exists, RTOS tries to run this script on built-in shell (known as AmbaShell)
 2) as we have no screen or uart output, we have to redirect them.
 3) in AmbaShell, storage management is dos-like. c:\ is your SDcard root, a:\ and b:\ are where internal data stored (possibly device-specific calibration files?)
 4) you can write commands in autoexec.ash, but you may want to redirect output to file like this : help > c:\help.log
-4-1) it doesn't work with 't dxo something' commands; it requires different approach; write 't dxo console 8' to autoexec.ash to redirect all output to sdcard:\console_debut.txt
+5) it doesn't work with 't dxo something' commands; it requires different approach; write 't dxo console 8' to autoexec.ash to redirect all output to sdcard:\console_debut.txt
 
 
 
