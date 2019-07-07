@@ -28,10 +28,14 @@ https://www.goprawn.com/forum/ambarella-cams/14041-dxo-one-ambarella-a9s35-sony-
 To open this, you have to poke wide and thin blade between black and silver gaps, the enclonsure hold each other with clap-on latch. Keep spudger above silver part and below black part.
 I hoped I could found debug pins on PCBs, but I couldnt' find any.
 2) I could name IC partnames after opening up metal shield.
-ADAU 13828CPZ (audio codec?)
-SPANSION ML04G200BH100 (NAND storage, guess only stores Linux systems)
-SAMSUNG K4P8G304E0-AGC2 (DRAM)
-Ambarella A9-A1-RH S1433 N93WA-D ANM1N1 A9S35 (SoC)
+
+| part          | purpose           | 
+| ------------- |:-------------:|
+| ADAU 13828CPZ      |audio codec? |
+| SPANSION ML04G200BH100      | NAND storage, guess only stores Linux system      |
+| SAMSUNG K4P8G304E0-AGC2 | DRAM      |
+| Ambarella A9-A1-RH S1433 N93WA-D ANM1N1 A9S35 | SoC|
+
 
 # Software side
 1) binwalk couldn't extract partitions.
