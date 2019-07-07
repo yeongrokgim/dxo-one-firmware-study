@@ -46,7 +46,7 @@ Ambarella A9-A1-RH S1433 N93WA-D ANM1N1 A9S35 (SoC)
 2) as we have no screen or uart output, we have to redirect them.
 3) in AmbaShell, storage management is dos-like. c:\ is your SDcard root, a:\ and b:\ are where internal data stored (possibly device-specific calibration files?)
 4) you can write commands in autoexec.ash, but you may want to redirect output to file like this : help > c:\help.log
-5) it doesn't work with 't dxo something' commands; it requires different approach; write 't dxo console 8' to autoexec.ash to redirect all output to sdcard:\console_debut.txt
+5) it doesn't work with 't dxo something' commands; it requires different approach; write 't dxo console 8' to autoexec.ash to redirect all output to sdcard:\console_debug.txt
 
 
 
