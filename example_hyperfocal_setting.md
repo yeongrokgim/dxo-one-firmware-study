@@ -2,6 +2,15 @@
 If you want to set DxO One to specific mode, say aperture priority, manual focus, f/4 and focus to 3.7m
 
 
+| Aperture | Hyperfocale | Sharpness range  |
+|:--------:|:-----------:|:----------------:|
+| f/1.8    | 7.8m        | 3.9m to infinity |
+| f/2      | 7.4m        | 3.7m to infinity |
+| f/2.8    | 5.2m        | 2.6m to infinity |
+| f/4      | 3.7m        | 1.3m to infinity |
+| f/5.6    | 2.6m        | 1.3m to infinity |
+| f/8      | 1.8m        | 0.9m to infinity |
+| f/11     | 1.3m        | 0.7m to infinity |
 
 https://reference-dxoone.dxo.com/en/3-6-managing-focus/
 
