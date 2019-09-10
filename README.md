@@ -52,5 +52,11 @@ I hoped I could found debug pins on PCBs, but I couldnt' find any.
 4) you can write commands in autoexec.ash, but you may want to redirect output to file like this : help > c:\help.log
 5) it doesn't work with 't dxo something' commands; it requires different approach; write 't dxo console 8' to autoexec.ash to redirect all output to sdcard:\console_debug.txt
 
+# SSH connectivity?
+1) By default, SSH server(dropbear) is enabled when Wi-Fi connection is running
+2) firmware has full linux partition, and reveals user id/pw, but password login is turned off when dropbear starts
+3) before running dropbear, system checks whether microSD has some folder and authorized_keys and authorized_keys.sign in it, if files are exist, tries to decode signing keys with preloaded public key, then it matches, system copies authorized_keys into /root/.ssh/, allowing ssh connection.
+4) getting private key from public key is not feasible(at least as of year 2019)
+5) flashing modified firmware may bypass this security function.
 
 
