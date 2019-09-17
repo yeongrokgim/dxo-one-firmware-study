@@ -31,7 +31,7 @@ I hoped I could found debug pins on PCBs, but I couldnt' find any.
 
 | part          | purpose           | 
 | ------------- |:-------------:|
-| ADAU 13828CPZ      |audio codec? |
+| ADAU 1382BCPZ      |audio codec? |
 | SPANSION ML04G200BH100      | NAND storage, guess only stores Linux system      |
 | SAMSUNG K4P8G304E0-AGC2 | DRAM      |
 | Ambarella A9-A1-RH S1433 N93WA-D ANM1N1 A9S35 | SoC|
