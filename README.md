@@ -59,4 +59,13 @@ I hoped I could found debug pins on PCBs, but I couldnt' find any.
 4) getting private key from public key is not feasible(at least as of year 2019)
 5) flashing modified firmware may bypass this security function.
 
+# Firmware Update
 
+assuming you downloaded firmawre file
+
+0) format a micro SD card via your computer. You will have to downgrade the firmware of your camera via the micro SD Card. Here are the steps to install it:
+1) Download on your computer the downgraded firmware.
+2) From your computer, copy/paste the firmware to the root directory of the micro SD Card.
+3) Put the micro SD card inside the camera.
+4) Press the button on the top of the camera and let your finger rest on the button (a long press)
+5) Slide the lens cover to open. Let your finger rest on the button (long press) until the OLED changes to display a progression bar.
